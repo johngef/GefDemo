@@ -32,7 +32,18 @@
         <service
             android:name=".service.My2Service"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
+
+        <receiver
+            android:name=".receiver.MyReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <provider
+            android:name=".provider.MyContentProvider"
+            android:authorities="com.sumu.provider"
+            android:enabled="true"
+            android:exported="true"></provider>
     </application>
 
 </manifest>
