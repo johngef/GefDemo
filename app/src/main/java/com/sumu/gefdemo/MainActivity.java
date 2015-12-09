@@ -17,6 +17,9 @@ public class MainActivity extends ActionBarActivity {
     public void handlerTestClick(View view){
         startActivity(new Intent(this,HandlerTestActivity.class));
     }
+    public void serviceTest(View view){
+        startActivity(new Intent(this,ServiceActivity.class));
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
