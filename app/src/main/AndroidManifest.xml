@@ -43,7 +43,28 @@
             android:name=".provider.MyContentProvider"
             android:authorities="com.sumu.provider"
             android:enabled="true"
-            android:exported="true"></provider>
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.Main3Activity"
+            android:label="@string/title_activity_main3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.AnimationActivity"
+            android:label="动画"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ListViewDemoActivity"
+            android:label="@string/title_activity_list_view_demo"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

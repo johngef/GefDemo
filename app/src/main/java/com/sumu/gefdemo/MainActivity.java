@@ -7,6 +7,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.sumu.gefdemo.activity.AnimationActivity;
+import com.sumu.gefdemo.activity.ListViewDemoActivity;
+import com.sumu.gefdemo.activity.ScrollingActivity;
+
 public class MainActivity extends ActionBarActivity {
 
     @Override
@@ -20,7 +24,15 @@ public class MainActivity extends ActionBarActivity {
     public void serviceTest(View view){
         startActivity(new Intent(this,ServiceActivity.class));
     }
-
+    public void ScrollingActivity(View view){
+        startActivity(new Intent(this,ScrollingActivity.class));
+    }
+    public void ListviewActivity(View view){
+        startActivity(new Intent(this,ListViewDemoActivity.class));
+    }
+    public void Animation(View view){
+        startActivity(new Intent(this,AnimationActivity.class));
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
