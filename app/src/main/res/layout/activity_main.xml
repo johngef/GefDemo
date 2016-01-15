@@ -36,5 +36,36 @@
         android:text="Animation"
         android:onClick="Animation"
         />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volley"
+        android:onClick="Volley"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PictureCompress"
+        android:onClick="PictureCompress"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="listviewActivity"
+        android:onClick="listviewActivity"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ViewActivity"
+        android:onClick="ViewActivity"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="singleChoice"
+        android:onClick="singleChoice"
+        />
+
 
 </LinearLayout>

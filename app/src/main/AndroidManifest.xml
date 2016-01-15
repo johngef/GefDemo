@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sumu.gefdemo">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -65,6 +67,17 @@
             android:name=".activity.ListViewDemoActivity"
             android:label="@string/title_activity_list_view_demo"
             android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <activity android:name=".activity.VolleyDemoActivity" />
+        <activity android:name=".activity.PictureCompressActivity" />
+        <activity android:name=".activity.AsynTaskActivity" />
+        <activity android:name=".activity.ListviewActivity" />
+        <activity android:name=".activity.ListViewSingleChoiceActivity" />
+        <activity android:name=".activity.ViewActivity"></activity>
     </application>
 
 </manifest>
