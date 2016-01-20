@@ -23,6 +23,7 @@ import java.util.List;
  */
 public class ListViewSingleChoiceActivity extends AppCompatActivity{
     private ListView listview;
+
     private ArrayList<String> arrayList = new ArrayList<>();
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

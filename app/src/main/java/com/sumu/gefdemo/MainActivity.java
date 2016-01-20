@@ -15,6 +15,7 @@ import com.sumu.gefdemo.activity.ListViewDemoActivity;
 import com.sumu.gefdemo.activity.ListViewSingleChoiceActivity;
 import com.sumu.gefdemo.activity.ListviewActivity;
 import com.sumu.gefdemo.activity.PictureCompressActivity;
+import com.sumu.gefdemo.activity.RecyclerViewActivity;
 import com.sumu.gefdemo.activity.ScrollingActivity;
 import com.sumu.gefdemo.activity.ViewActivity;
 
@@ -61,6 +62,9 @@ public class MainActivity extends ActionBarActivity {
     }
     public void ViewActivity(View view){
         startActivity(new Intent(this,ViewActivity.class));
+    }
+    public void recyclerView(View view){
+        startActivity(new Intent(this,RecyclerViewActivity.class));
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

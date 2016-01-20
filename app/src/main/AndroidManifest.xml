@@ -3,6 +3,7 @@
     package="com.sumu.gefdemo">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -77,7 +78,20 @@
         <activity android:name=".activity.AsynTaskActivity" />
         <activity android:name=".activity.ListviewActivity" />
         <activity android:name=".activity.ListViewSingleChoiceActivity" />
-        <activity android:name=".activity.ViewActivity"></activity>
+        <activity android:name=".activity.ViewActivity" />
+        <!-- This meta-data tag is required to use Google Play Services. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Main22Activity"
+            android:label="@string/title_activity_main22" /> <!-- Include the AdActivity configChanges and theme. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity android:name=".activity.RecyclerViewActivity"></activity>
     </application>
 
 </manifest>
