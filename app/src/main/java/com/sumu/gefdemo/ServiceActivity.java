@@ -1,5 +1,6 @@
 package com.sumu.gefdemo;
 
+import android.app.IntentService;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.ServiceConnection;
@@ -9,6 +10,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.View;
 
+import com.sumu.gefdemo.activity.Service2Activity;
 import com.sumu.gefdemo.service.My1Service;
 import com.sumu.gefdemo.service.My2Service;
 
@@ -77,5 +79,9 @@ public class ServiceActivity extends ActionBarActivity {
     protected void onDestroy() {
         super.onDestroy();
 //        unbindService(serviceConnection);
+    }
+    public void startService2Activity(View view){
+        startActivity(new Intent(this, Service2Activity.class));
+
     }
 }

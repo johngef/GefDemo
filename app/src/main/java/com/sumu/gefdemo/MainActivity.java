@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.sumu.gefdemo.activity.AnimationActivity;
+import com.sumu.gefdemo.activity.DialogDemoActivity;
 import com.sumu.gefdemo.activity.ListViewDemoActivity;
 import com.sumu.gefdemo.activity.ListViewSingleChoiceActivity;
 import com.sumu.gefdemo.activity.ListviewActivity;
@@ -65,6 +66,9 @@ public class MainActivity extends ActionBarActivity {
     }
     public void recyclerView(View view){
         startActivity(new Intent(this,RecyclerViewActivity.class));
+    }
+    public void dialog(View view){
+        startActivity(new Intent(this,DialogDemoActivity.class));
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

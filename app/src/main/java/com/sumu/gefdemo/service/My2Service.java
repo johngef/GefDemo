@@ -2,11 +2,11 @@ package com.sumu.gefdemo.service;
 
 import android.app.Service;
 import android.content.Intent;
-import android.os.Binder;
-import android.os.IBinder;
+import android.os.*;
 import android.util.Log;
 
 public class My2Service extends Service {
+
     public My2Service() {
     }
 
@@ -46,8 +46,10 @@ public class My2Service extends Service {
     }
     public class MyBinder extends Binder{
         public void run(){
+            stopSelf();
             Log.e("sumu","-----My2Service-----run");
         }
     }
+
 
 }

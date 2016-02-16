@@ -86,12 +86,15 @@
 
         <activity
             android:name=".Main22Activity"
-            android:label="@string/title_activity_main22" /> <!-- Include the AdActivity configChanges and theme. -->
+            android:label="@string/title_activity_main22" />
+        <!-- Include the AdActivity configChanges and theme. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:theme="@android:style/Theme.Translucent" />
-        <activity android:name=".activity.RecyclerViewActivity"></activity>
+        <activity android:name=".activity.RecyclerViewActivity" />
+        <activity android:name=".activity.Service2Activity" />
+        <activity android:name=".activity.DialogDemoActivity"></activity>
     </application>
 
 </manifest>
