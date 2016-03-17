@@ -94,7 +94,12 @@
             android:theme="@android:style/Theme.Translucent" />
         <activity android:name=".activity.RecyclerViewActivity" />
         <activity android:name=".activity.Service2Activity" />
-        <activity android:name=".activity.DialogDemoActivity"></activity>
+        <activity android:name=".activity.DialogDemoActivity" />
+        <activity android:name=".activity.WebActivity" />
+        <activity
+            android:name=".activity.TouchActivity"
+            android:label="@string/title_activity_touch"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

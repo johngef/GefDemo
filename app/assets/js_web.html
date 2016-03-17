@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>葛夫锋</title>
+		
+		<script>
+			function callJS(){
+				document.getElementById("text").innerHTML = "android调用了js方法";
+			}
+			function callAndroid(){
+				test.hello("js调用了android中的hello方法");
+			}
+		</script>
+	</head>
+
+	<body>
+		<p id="text">等待被android调用</p>
+		<button type="button" id="button1" onclick="callAndroid()">js调用android中的代码</button>
+		
+	</body>
+
+</html>

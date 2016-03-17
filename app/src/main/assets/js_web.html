@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>葛夫锋</title>
+		
+		<script>
+			function callJS(){
+				alert("android调用了js中的callJS方法");
+			}
+			function callAndroid(){
+				test.hello("js调用了android中的hello方法");
+			}
+			function androidcalljs(){
+				test.hello1();
+			}
+		</script>
+	</head>
+
+	<body>
+		<button type="button" id="button1" onclick="callAndroid()">js调用android中的代码</button>
+		<button type="button" id="button2" onclick="androidcalljs()">android调用js中的代码</button>
+		
+	</body>
+
+</html>

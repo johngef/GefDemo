@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
 
 import com.sumu.gefdemo.activity.AnimationActivity;
 import com.sumu.gefdemo.activity.DialogDemoActivity;
@@ -18,7 +19,9 @@ import com.sumu.gefdemo.activity.ListviewActivity;
 import com.sumu.gefdemo.activity.PictureCompressActivity;
 import com.sumu.gefdemo.activity.RecyclerViewActivity;
 import com.sumu.gefdemo.activity.ScrollingActivity;
+import com.sumu.gefdemo.activity.TouchActivity;
 import com.sumu.gefdemo.activity.ViewActivity;
+import com.sumu.gefdemo.activity.WebActivity;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -38,7 +41,7 @@ public class MainActivity extends ActionBarActivity {
 
     }
     public void handlerTestClick(View view){
-        startActivity(new Intent(this,HandlerTestActivity.class));
+        startActivity(new Intent(this, HandlerTestActivity.class));
     }
     public void serviceTest(View view){
         startActivity(new Intent(this,ServiceActivity.class));
@@ -67,8 +70,14 @@ public class MainActivity extends ActionBarActivity {
     public void recyclerView(View view){
         startActivity(new Intent(this,RecyclerViewActivity.class));
     }
+    public void webview(View view){
+        startActivity(new Intent(this,WebActivity.class));
+    }
     public void dialog(View view){
         startActivity(new Intent(this,DialogDemoActivity.class));
+    }
+    public void touch(View view){
+        startActivity(new Intent(this,TouchActivity.class));
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
